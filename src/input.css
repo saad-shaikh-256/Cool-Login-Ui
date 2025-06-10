@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-rubik: Rubik, "sans-serif";
+
+  --color-primary: #4d7881;
+  --color-custom-black: #424242;
+
+  --breakpoint-xs: 30rem;
+}
+
+* {
+  transition: 0.5s;
+  scroll-behavior: smooth;
+}
+
+.gsap-y {
+  transform: translateY(-100%);
+  opacity: 0;
+  overflow: hidden;
+}
+
+.gsap-x {
+  transform: translateX(-100%);
+  opacity: 0;
+  overflow: hidden;
+}
+
+.gsap-ny {
+  transform: translateY(100%);
+  opacity: 0;
+  overflow: hidden;
+}
+
+.gsap-nx {
+  transform: translateX(100%);
+  opacity: 0;
+  overflow: hidden;
+}
+
+.gsap-op {
+  opacity: 0;
+  overflow: hidden;
+}
+
+::selection {
+  @apply bg-primary text-black;
+}
+
+.main-Container {
+  @apply bg-white h-screen w-screen font-rubik;
+}
+
+.screen-Instruction {
+  @apply h-full w-full hidden xs:flex justify-center items-center font-semibold text-xl text-center bg-white text-black;
+}
+
+.main-Content {
+  @apply h-full w-full px-6 py-10 flex flex-col xs:hidden bg-white justify-between;
+}
+
+.content-Skip {
+  @apply w-full h-fit flex justify-end;
+
+  a {
+    @apply text-xs font-medium bg-[#e8eced] text-primary py-1.5 px-4 rounded-full;
+  }
+}
+
+.imageText-Container {
+  @apply h-fit w-full flex flex-col justify-center items-center gap-8;
+}
+
+.image-Container {
+  @apply h-auto w-full flex items-center justify-center;
+}
+.text-Container {
+  @apply h-fit w-full flex flex-col gap-3 justify-center items-center text-center;
+}
+.heading-Text {
+  @apply text-2xl font-semibold text-custom-black;
+
+  span {
+    @apply text-primary;
+  }
+}
+
+.content-Text {
+  @apply h-fit w-[60%] text-xs text-gray-500;
+}
+.submit-Button {
+  @apply h-fit w-full text-center bg-primary text-white text-lg rounded-full font-semibold px-4 py-2.5 active:scale-[98%];
+}
+
+/* Login */
+.upper-Container {
+  @apply h-fit w-full flex flex-col gap-14;
+}
+
+.icon-Heading {
+  @apply h-fit w-full flex flex-col gap-6;
+
+  .icon-Container {
+    @apply h-fit w-fit  bg-[#4d788117] rounded-full text-center text-primary font-semibold;
+    i {
+      @apply h-10 w-10 flex justify-center items-center;
+    }
+  }
+
+  .Heading-Container {
+    @apply h-fit w-[60%] text-[1.75rem] font-semibold text-custom-black;
+  }
+}
+
+.input-Container {
+  @apply h-fit w-full flex flex-col gap-4;
+}
+
+.input-Box {
+  @apply h-fit w-full flex items-center px-5 py-3.5 bg-gray-100 gap-2 rounded-full focus-within:border focus-within:border-primary;
+
+  i {
+    @apply text-xl text-gray-500;
+  }
+  input {
+    @apply grow outline-none;
+  }
+}
+
+.forgot-Password {
+  @apply h-fit w-full text-end font-medium text-sm text-primary;
+}
+
+.lower-Container {
+  @apply h-fit w-full flex flex-col gap-4 text-center;
+
+  .or-Continue {
+    @apply h-fit w-full font-medium text-xs text-gray-400;
+  }
+
+  .social-Media {
+    @apply h-fit w-full flex justify-center items-center gap-5;
+  }
+
+  .redirect-Link {
+    @apply h-fit w-full text-sm text-gray-500;
+
+    span {
+      @apply text-primary font-semibold;
+    }
+  }
+}

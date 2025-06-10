@@ -1,0 +1,26 @@
+{
+  "name": "cool-login-page",
+  "version": "1.0.0",
+  "description": "![Cover Image](https://github.com/saad-shaikh-256/Cool-Login-Page/blob/main/Materials/Cover/Cover.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saad-shaikh-256/Cool-Login-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/saad-shaikh-256/Cool-Login-Page/issues"
+  },
+  "homepage": "https://github.com/saad-shaikh-256/Cool-Login-Page#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.8",
+    "tailwindcss": "^4.1.8"
+  }
+}
